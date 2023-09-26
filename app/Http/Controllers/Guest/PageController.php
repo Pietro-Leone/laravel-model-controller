@@ -9,10 +9,7 @@ use App\Models\Movie;
 class PageController extends Controller
 {
     public function index() {
-        $dati = Movie::all();
-
-        dd($dati);
-        
+        $dati = Movie::all();        
         return view('home', ["movies" => $dati]);
     }
 }
